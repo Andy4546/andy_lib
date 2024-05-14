@@ -53,6 +53,8 @@ Route::post('/auth/login', function (Request $request) {
     ]);
 });
 
+Route::post('/register', [App\Http\Controllers\Auth\RegisterController::class, 'register']);
+
 Route::middleware('auth:sanctum')->delete('/auth/logout', function (Request $request) {
     $request->user()->currentAccessToken()->delete();
 });

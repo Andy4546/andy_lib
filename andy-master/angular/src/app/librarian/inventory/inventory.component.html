@@ -9,20 +9,20 @@
     </a>
     <div
       class="flex-grow-1 d-flex p-3 align-items-center gap-3 shadow"
-     
+      style="background-color: #002862"
     >
       <img
         src="../../../assets/images/220px-LNUTaclobanLogo-removebg-preview.png"
         height="64"
       />
-      <h1 class="text-light">Movie Catalog System</h1>
+      <h1 class="text-light">Library Management System</h1>
     </div>
   </header>
 
   <div class="flex-grow-1 d-flex flex-column gap-3 p-5 py-4">
     <div class="flex-grow-1 d-flex gap-5">
       <form
-        class="w-25 d-flex flex-column gap-2 t text-white"
+        class="w-25 d-flex flex-column gap-2"
         [formGroup]="addBookForm"
         (ngSubmit)="addBook()"
       >

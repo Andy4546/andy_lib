@@ -1,4 +1,8 @@
-<div id="component" class="d-flex flex-column vh-100">
+
+
+<div id="component" class="d-flex flex-column vh-100" style="background-image: url('../../assets/images/hero-bg.jpg'); background-size: cover; background-position: center;" >
+  
+
   <header class="d-flex">
     <a
       href="librarian"
@@ -8,8 +12,8 @@
       <img src="../../../assets/images/left-arrow (3).png" height="32" />
     </a>
     <div
-      class="flex-grow-1 d-flex p-3 align-items-center gap-3 shadow"
-      style="background-color: #002862"
+      class="flex-grow-1 d-flex p-3 align-items-center gap-3 "
+      
     >
       <img
         src="../../../assets/images/220px-LNUTaclobanLogo-removebg-preview.png"
@@ -19,101 +23,26 @@
     </div>
   </header>
 
-  <div class="flex-grow-1 d-flex flex-column gap-3 p-5 py-4">
+  <div class="flex-grow-1 d-flex flex-column gap-3 p-5 py-4  text-white">
     <span class="h4 m-0">Account Management</span>
     <div class="d-flex gap-3">
-      <button class="btn btn-sm btn-primary">Librarian</button>
-      <button class="btn btn-sm btn-primary">Borrower</button>
-      <button class="btn btn-sm btn-primary text-nowrap me-auto">
-        Librarian Aide
-      </button>
-      <div class="justify-self-end">
-        <input
-          type="search"
-          class="form-control form-control-sm"
-          placeholder="Search"
-          [formControl]="searchQuery"
-          (input)="searchUsers()"
-        />
-      </div>
-    </div>
+      
+      
+      
 
-    <div class="d-flex gap-5">
-      <form
-        class="w-25 d-flex flex-column gap-2"
-        [formGroup]="addUserForm"
-        (ngSubmit)="onSubmit()"
-      >
-        <div>
-          <label>First name:</label>
-          <input
-            class="form-control form-control-sm bg-primary-subtle"
-            type="text"
-            formControlName="firstname"
-          />
-        </div>
-        <div>
-          <label>Last name:</label>
-          <input
-            class="form-control form-control-sm bg-primary-subtle"
-            type="text"
-            formControlName="lastname"
-          />
-        </div>
-        <div>
-          <label>ID Number:</label>
-          <input
-            class="form-control form-control-sm bg-primary-subtle"
-            type="text"
-            formControlName="id_number"
-          />
-        </div>
-        <div>
-          <label>Email:</label>
-          <input
-            class="form-control form-control-sm bg-primary-subtle"
-            type="email"
-            formControlName="email"
-          />
-        </div>
-        <div>
-          <label>Password:</label>
-          <input
-            class="form-control form-control-sm bg-primary-subtle"
-            type="password"
-            formControlName="password"
-          />
-        </div>
-        <div>
-          <label>Type:</label>
-          <select
-            class="form-select form-select-sm bg-primary-subtle"
-            formControlName="type"
-          >
-            <option value="librarian">Librarian</option>
-            <option value="borrower">Borrower</option>
-            <option value="librarian-aide">Librarian Aide</option>
-          </select>
-        </div>
-        <div>
-          <label>Contact</label>
-          <input
-            class="form-control form-control-sm bg-primary-subtle"
-            type="text"
-            formControlName="contact"
-          />
-        </div>
-        <div class="d-flex mt-2 px-3 gap-3">
-          <button type="submit" class="flex-grow-1 btn btn-sm btn-primary">
-            Add
-          </button>
-          <button type="reset" class="flex-grow-1 btn btn-sm btn-primary">
-            Cancel
-          </button>
-        </div>
-      </form>
+    
+      
+      <div class="flex-grow-1 table-responsive ">
 
-      <div class="flex-grow-1 table-responsive border">
+        <div class="justify-self-end d-inline-block mb-3 ">
+          <input
+            type="search"
+            class="form-control form-control-sm"
+            placeholder="Search"
+            [formControl]="searchQuery"
+            (input)="searchUsers()"
+          />
+        </div>
         <table class="table table-striped align-middle">
           <thead class="table-dark">
             <tr>
@@ -172,6 +101,10 @@
       </div>
     </div>
   </div>
+
+  
+
+
 </div>
 
 <!-- Modal -->

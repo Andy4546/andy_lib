@@ -9,6 +9,7 @@ import { LostAndDamageComponent } from './librarian/lost-and-damage/lost-and-dam
 import { TransactionComponent } from './librarian/transaction/transaction.component';
 import { LoginComponent } from './login/login.component';
 import { Total_list_booksComponent } from './total_list_books/list_book.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 export const routes: Routes = [
   {
@@ -61,4 +62,11 @@ export const routes: Routes = [
     component: InventoryComponent,
     title: 'LIBRARY MANAGEMENT SYSTEM',
   },
+
+  {
+    path: 'sign-up',
+    component: SignUpComponent,
+    title: 'LIBRARY MANAGEMENT SYSTEM',
+  },
+
 ];
